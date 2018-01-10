@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pick Your Favorite Musician's Giphy!</title>	
+	<meta charset="utf-8">
+	<title></title>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+		    
+		<div class="row justify-content-center">
+			<div class="header mt-3 col-12">
+			<h1>Giphy's of Musician's</h1>
+			</div>
+		</div>
+	<div class="container-fluid bg">
+    	<div class="row mb-3 p-3">
+    	<!-- main buttons areas that would be populated through jquery -i had uncomment since Jquery not working -->
+				<div id="buttonsDiv">
+	 			<button class="gifs-btn" data-person="whitney">Whitney Houston</button>
+				<button class="gifs-btn" data-person="elton">Elton John</button>
+				<button class="gifs-btn" data-person="prince">Prince No Lastname</button>
+				<button class="gifs-btn" data-person="bruce">Bruce Springsteen</button>
+			</div>
+		</div>
+	<!-- form type for our searches and submit buttons -->
+			<div class="col-4">
+				<form class="float-right mb-3">
+					<div class="form-group mt-3">
+					<label for="search-input"><h2>Enter a singer's name</h2></label>
+					<input type="text" id="search-input">
+					<input type="submit" value="Submit">
+			 	</form>
+			</div>
+		<!-- div to put all the gifs for our topic of arrays  -->
+	 <div id="searches" class="col-12 float-left"></div>
+
+ <script src="assets/api.js"></script>
+</body>
+</html>
